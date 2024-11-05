@@ -1,0 +1,79 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+
+}  
+body{
+    background: linear-gradient(135deg, rgb(68, 126, 227), #9b59b6);
+    display: flex;
+    height: 100vh;  
+    box-align: center;
+    align-items: center;
+    margin: 10px;
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background-color: white;
+    margin: 25px,30px;
+    border-radius: 5px, rgb(0, 0, 0);
+   
+
+}
+.container .title{
+    font-size: 25px;
+    position: relative;
+    font-weight: 500;
+
+} 
+.container .title::before{
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, rgb(142, 26, 26), red);
+
+
+}
+.container .user-details form{
+    display: flex ;  
+    flex-wrap: wrap ;
+    justify-content: space-between ;
+    margin: 20px 0 12px 0;
+
+
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100%/ 2-20px);
+}
+
+.user-details .input-box input{
+    display: grid;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: 0;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus{
+    border-color: #9b59b6;
+}
+.user-details .input-box input:valid{
+    border-color: #9b59b6;
+}
