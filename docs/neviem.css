@@ -3,12 +3,13 @@ body {
     margin: 0;
     padding: 0;
     background-color: #dad5d5;
+    height: 1000px;
 }
 
 header {
     background-color: #a8a8a8;
     text-align: center;
-    padding: 20px;
+    padding: 50px;
     border: 3px solid #000000;
 }
 
@@ -79,3 +80,63 @@ h2 {
 .obr {
     align-items: left;
 }
+.header-contact {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #808080;
+}
+
+.header-container {
+    background-color: #a8a8a8;
+    text-align: center;
+    padding: 50px;
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.category-button {
+    display: inline-block;
+}
+
+.category-image {
+    width: 50px; 
+    height: 50px; 
+    border: 2px solid #000000;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.category-image:hover {
+    transform: scale(1.1);
+}
+
+.block {
+    border: 3px solid #000000;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    background-color: #807d7d;
+}
+
