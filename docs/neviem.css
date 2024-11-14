@@ -9,7 +9,7 @@ body {
 header {
     background-color: #a8a8a8;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
     border: 3px solid #000000;
 }
 
@@ -85,21 +85,8 @@ h2 {
     margin-bottom: 20px;
 }
 
-.contact-button {
-    margin-right: 10px;
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #000000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 
-.contact-button:hover {
-    background-color: #808080;
-}
+
 
 .header-container {
     background-color: #a8a8a8;
@@ -124,6 +111,7 @@ h2 {
     border: 2px solid #000000;
     border-radius: 5px;
     transition: transform 0.3s;
+   
 }
 
 .category-image:hover {
@@ -140,3 +128,39 @@ h2 {
     background-color: #807d7d;
 }
 
+.registracia-button{
+
+    float: right;
+    padding: 10px ;
+    font-size: 18px;
+    background-color: #000000;
+    color: #fff;
+    border: solid rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+.contact-button {
+    float: right;
+    padding: 10px ;
+    font-size: 18px;
+    background-color: #000000;
+    color: #fff;
+    border: solid rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.domov-button{
+    float: right;
+    padding: 10px ;
+    font-size: 18px;
+    background-color: #000000;
+    color: #fff;
+    border: solid rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
