@@ -153,7 +153,7 @@ h2 {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.domov-button{
+.domov{
     float: right;
     padding: 10px ;
     font-size: 18px;
@@ -164,4 +164,67 @@ h2 {
     cursor: pointer;
     transition: background-color 0.3s ease;
 
+}
+
+
+.shirt-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.shirt-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shirt-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.shirt-details {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.shirt-details h3 {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #333;
+}
+
+.shirt-details p {
+    font-size: 1em;
+    color: #555;
+}
+
+.shirt-details button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.shirt-details button:hover {
+    background-color: #444;
+}
+
+.shirt-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

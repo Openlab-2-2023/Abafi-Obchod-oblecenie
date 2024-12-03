@@ -1,0 +1,10 @@
+.grid{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+}
+@media (max-width:900px) {
+    .grid{
+        grid-template-columns: 100px;
+    }
+
+}
