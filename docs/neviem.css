@@ -153,20 +153,6 @@ h2 {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.domov{
-    float: right;
-    padding: 10px ;
-    font-size: 18px;
-    background-color: #000000;
-    color: #fff;
-    border: solid rgb(255, 255, 255);
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
-}
-
-
 .shirt-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -227,4 +213,58 @@ h2 {
 .shirt-item:hover {
     transform: scale(1.03);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.domovBut{
+    float: right;
+  padding: 10px;
+  font-size: 18px;
+  background-color: black;
+  color: #fff;
+  border: solid rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  text-decoration: none;
+    
+}
+
+.registraciaBut{
+
+    float: right;
+  padding: 10px;
+  font-size: 18px;
+  background-color: black;
+  color: #fff;
+  border: solid rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  text-decoration: none;
+
+}
+
+.contactBut{
+    float: right;
+  padding: 10px;
+  font-size: 18px;
+  background-color: black;
+  color: #fff;
+  border: solid rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  text-decoration: none;
 }
