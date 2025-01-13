@@ -3,18 +3,60 @@ body {
     margin: 0;
     padding: 0;
     background-color: #dad5d5;
-    height: 1000px;
+    height: 100%;
 }
 
 header {
     background-color: #a8a8a8;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     border: 3px solid #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.category-button {
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category-button:hover {
+    background-color: #444;
 }
 
 .header-container img {
-    margin-right: 10px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: "My font";
+    font-size: 2em;
 }
 
 .category-buttons {
@@ -22,6 +64,7 @@ header {
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .category-button {
@@ -29,8 +72,8 @@ header {
 }
 
 .category-image {
-    width: 50px; 
-    height: 50px; 
+    width: 45px;
+    height: 45px;
     border: 2px solid #000000;
     border-radius: 5px;
     transition: transform 0.3s;
@@ -48,6 +91,7 @@ header {
     max-width: 600px;
     text-align: center;
     background-color: #807d7d;
+    transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
 footer {
@@ -65,10 +109,6 @@ footer {
     src: url(fond/RubikWetPaint-Regular.ttf);
 }
 
-h1 {
-    font-family: "My font";
-}
-
 h2 {
     font-family: "My font";
 }
@@ -80,59 +120,14 @@ h2 {
 .obr {
     align-items: left;
 }
+
 .header-contact {
     text-align: center;
     margin-bottom: 20px;
 }
 
-
-
-
-.header-container {
-    background-color: #a8a8a8;
-    text-align: center;
-    padding: 50px;
-}
-
-.category-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.category-button {
-    display: inline-block;
-    
-}
-
-.category-image {
-    width: 50px; 
-    height: 50px; 
-    border: 2px solid #000000;
-    border-radius: 5px;
-    transition: transform 0.3s;
-   
-}
-
-.category-image:hover {
-    transform: scale(1.1);
-}
-
-.block {
-    border: 3px solid #000000;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
-    text-align: center;
-    background-color: #807d7d;
-}
-
-.registracia-button{
-
-    float: right;
-    padding: 10px ;
+.registracia-button {
+    padding: 10px;
     font-size: 18px;
     background-color: #000000;
     color: #fff;
@@ -140,11 +135,10 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    
 }
+
 .contact-button {
-    float: right;
-    padding: 10px ;
+    padding: 10px;
     font-size: 18px;
     background-color: #000000;
     color: #fff;
@@ -153,6 +147,7 @@ h2 {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .shirt-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -173,8 +168,8 @@ h2 {
 }
 
 .shirt-item img {
-    width: 100%;
-    height: auto;
+    width: 250px;
+    height: 300px;
     border-radius: 5px;
 }
 
@@ -215,56 +210,135 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.domovBut{
-    float: right;
-  padding: 10px;
-  font-size: 18px;
-  background-color: black;
-  color: #fff;
-  border: solid rgb(255, 255, 255);
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 40px;
-  text-decoration: none;
-    
+.domovBut {
+    padding: 10px;
+    font-size: 18px;
+    background-color: black;
+    color: #fff;
+    border: solid rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    text-decoration: none;
 }
 
-.registraciaBut{
-
-    float: right;
-  padding: 10px;
-  font-size: 18px;
-  background-color: black;
-  color: #fff;
-  border: solid rgb(255, 255, 255);
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 40px;
-  text-decoration: none;
-
+.registraciaBut {
+    padding: 10px;
+    font-size: 18px;
+    background-color: black;
+    color: #fff;
+    border: solid rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    text-decoration: none;
 }
 
-.contactBut{
-    float: right;
-  padding: 10px;
-  font-size: 18px;
-  background-color: black;
-  color: #fff;
-  border: solid rgb(255, 255, 255);
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 40px;
-  text-decoration: none;
+.contactBut {
+    padding: 10px;
+    font-size: 18px;
+    background-color: black;
+    color: #fff;
+    border: solid rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    text-decoration: none;
 }
+
+.block {
+    border: 3px solid #000000;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    background-color: #807d7d;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.block p {
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.block .long-text {
+    display: none;
+}
+
+.block:hover .short-text {
+    display: none;
+}
+
+.block:hover .long-text {
+    display: block;
+}
+
+.block:hover {
+    background-color: #928f8f;
+    padding: 25px;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    width: 100%;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.domovBut, .registraciaBut, .contactBut {
+    padding: 10px;
+    font-size: 18px;
+    background-color: black;
+    color: #fff;
+    border: solid rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .header-buttons {
+        justify-content: center;
+    }
+
+    .domovBut, .registraciaBut, .contactBut {
+        width: auto;
+    }
+}
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  
+  
