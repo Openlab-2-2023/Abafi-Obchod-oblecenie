@@ -119,6 +119,7 @@ h2 {
 
 .obr {
     align-items: left;
+    
 }
 
 .header-contact {
@@ -335,8 +336,7 @@ img {
   
   @media (max-width: 768px) {
     .obr {
-      width: 12vw;
-      height: 12vw;
+      visibility: hidden;
     }
   }
   
